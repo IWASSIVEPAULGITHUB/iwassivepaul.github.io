@@ -1,0 +1,144 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+
+header {
+    background: url("pizza1.jpg") no-repeat center center/cover;
+    height: 100vh;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+header .main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+header .logo img {
+    height: 50px;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+}
+
+header ul li {
+    margin-left: 20px;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+}
+
+header ul li a:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+header .title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+header .title h1 {
+    font-size: 3rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    letter-spacing: 3px;
+}
+
+
+section {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: -50px auto 20px;
+    max-width: 900px;
+    border-top: 10px;
+}
+
+section p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+section table {
+    width: 100%;
+    margin: 20px 0;
+    border-spacing: 20px;
+}
+
+section table th {
+    text-align: center;
+}
+
+section table img {
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+section table img:hover {
+    transform: scale(1.05);
+}
+
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 16px;
+}
+
+
+@media (max-width: 768px) {
+    header .main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header ul {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    header ul li a {
+        font-size: 16px;
+    }
+
+    section table {
+        border-spacing: 10px;
+    }
+}

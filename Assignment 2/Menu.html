@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Pizza Menu</title>
+    <link rel="stylesheet"href="menu.css">
+</head>
+<body>
+    <header>
+        <h1>Pizza Menu</h1>
+    </header>
+
+    <div class="container">
+        <div class="menu-item">
+            <img src="margherita.jpeg" alt="Margherita Pizza">
+            <div class="menu-details">
+                <h3>Margherita</h3>
+                <p class="price">Regular ksh650 Large ksh1200</p>
+                <p class="description">Classic Margherita topped with fresh mozzarella, juicy tomatoes, and a touch of basil, delivering a timeless taste of authentic Italian tradition in every slice.</p>
+            </div>
+        </div>
+        
+        <div class="menu-item">
+            <img src="pepperoni2.jpeg" alt="Pepperoni Pizza">
+            <div class="menu-details">
+                <h3>Pepperoni</h3>
+                <p class="price">Regular ksh700,Large ksh 1300</p>
+                <p class="description">Loaded with spicy pepperoni, melted mozzarella, and a crispy crust, this all-time favorite guarantees bold flavors and satisfaction with every bite.</p>
+            </div>
+        </div>
+        
+        <div class="menu-item">
+            <img src="BBQ chicken.jpeg" alt="BBQ Chicken Pizza">
+            <div class="menu-details">
+                <h3>BBQ Chicken</h3>
+                <p class="price">Regular ksh680,large ksh1350</p>
+                <p class="description">Tender chicken chunks, tangy BBQ sauce, and melted cheese come together for a smoky, savory treat that's perfect for meat lovers.</p>
+            </div>
+        </div>
+        
+        <div class="menu-item">
+            <img src="Veggie delight.jpeg" alt="Veggie Delight Pizza">
+            <div class="menu-details">
+                <h3>Veggie Delight</h3>
+                <p class="price">Regular ksh700,Large ksh1400</p>
+                <p class="description">A colorful mix of bell peppers, onions, olives, and mushrooms on a crispy crust, perfect for vegetarians and anyone seeking a fresh, healthy option.</p>
+            </div>
+        </div>
+        
+        <div class="menu-item">
+            <img src="hawaiian.jpeg" alt="Hawaiian Pizza">
+            <div class="menu-details">
+                <h3>Hawaiian</h3>
+                <p class="price">Regular Ksh800 Large Ksh1600</p>
+                <p class="description">A tropical twist with sweet pineapple chunks and savory ham, delivering a perfect balance of sweet and salty flavors in every bite.</p>
+            </div>
+        </div>
+        
+        <div class="menu-item">
+            <img src="meatlover.jpeg" alt="Meat Lovers Pizza">
+            <div class="menu-details">
+                <h3>Meat Lovers</h3>
+                <p class="price">Regular ksh800 large ksh1600</p>
+                <p class="description">Packed with pepperoni, sausage, bacon, and beef, this hearty pizza is a paradise for carnivores craving a bold and satisfying meal.</p>
+            </div>
+        </div>
+        
+        <div class="menu-item">
+            <img src="four cheese.jpeg" alt="Four Cheese Pizza">
+            <div class="menu-details">
+                <h3>Four Cheese</h3>
+                <p class="price">Regular Ksh1000,Large ksh2000</p>
+                <p class="description">A luxurious blend of mozzarella, cheddar, parmesan, and gorgonzola cheeses that creates a creamy, melty masterpiece for cheese enthusiasts.</p>
+            </div>
+        </div>
+    </div>
+    <section class="order-section">
+        <h2>Place Your Order</h2>
+        <form action="submit_order.php" method="post">
+            <label for="pizza">Choose your pizza:</label>
+            <select id="pizza" name="pizza" required>
+                <option value="Margherita">Margherita</option>
+                <option value="Pepperoni">Pepperoni</option>
+                <option value="BBQ Chicken">BBQ Chicken</option>
+                <option value="Veggie Delight">Veggie Delight</option>
+                <option value="Hawaiian">Hawaiian</option>
+                <option value="Meat Lovers">Meat Lovers</option>
+                <option value="Four Cheese">Four Cheese</option>
+            </select>
+
+            <label for="size">Choose size:</label>
+            <select id="size" name="size" required>
+                <option value="Regular">Regular</option>
+                <option value="Large">Large</option>
+            </select>
+
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="1" required>
+
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="contact">Contact Information:</label>
+            <input type="text" id="contact" name="contact" placeholder="Phone or Email" required>
+
+            <button type="submit">Order Now</button>
+        </form>
+    </section>
+
+
+    <footer>
+        <p>&copy; 2024 Home Pizza. All rights reserved.</p>
+    </footer>
+</body>
+</html>
